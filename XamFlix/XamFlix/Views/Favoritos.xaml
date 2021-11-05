@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFlix.Views.Favoritos">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="black">
+            <BoxView HeightRequest="10"/>
+            <Label Text="Sua Lista de Favoritos" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="White"/>
+            <Label Text="Crie sua lista de favoritos para acesso rápido!" HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="Gray"/>
+            <Frame BackgroundColor="#3E474C" HasShadow="False">
+                <Grid RowSpacing="5"
+                      ColumnSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <BoxView Color="Gray"/>
+                    <ImageButton Source="serie1.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+
+                    <BoxView Color="Gray" Grid.Column="1"/>
+                    <ImageButton Source="filme2.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="1"/>
+
+                    <BoxView Color="Gray" Grid.Column="2"/>
+                    <ImageButton Source="serie3.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="2"/>
+
+                    <BoxView Color="Gray" Grid.Row="1"/>
+                    <!--<ImageButton Source="serie4.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="1"/>-->
+
+                    <BoxView Color="Gray" Grid.Column="1" Grid.Row="1"/>
+                    <!--<ImageButton Source="serie5.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="1"/>-->
+
+                    <BoxView Color="Gray" Grid.Column="2" Grid.Row="1"/>
+                    <!--<ImageButton Source="serie6.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="1"/>-->
+
+                    <BoxView Color="Gray" Grid.Row="2"/>
+                    <!--<ImageButton Source="serie1.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="2"/>-->
+
+                    <BoxView Color="Gray" Grid.Column="1" Grid.Row="2"/>
+                    <!--<ImageButton Source="serie2.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="2"/>-->
+
+                    <BoxView Color="Gray" Grid.Column="2" Grid.Row="2"/>
+                    <!--<ImageButton Source="serie3.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="2"/>-->
+
+                </Grid>
+
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

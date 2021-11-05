@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFlix.Views.Filmes">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="black">
+            <BoxView HeightRequest="10"/>
+            <Label Text="Filmes XamFlix" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="White"/>
+            <Frame BackgroundColor="#3E474C" HasShadow="False">
+                <Grid RowSpacing="5"
+                      ColumnSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <BoxView Color="Gray"/>
+                    <ImageButton Source="filme1.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+
+                    <BoxView Color="Gray" Grid.Column="1"/>
+                    <ImageButton Source="filme2.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="1"/>
+
+                    <BoxView Color="Gray" Grid.Column="2"/>
+                    <ImageButton Source="filme3.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="2"/>
+
+                    <BoxView Color="Gray" Grid.Row="1"/>
+                    <ImageButton Source="filme4.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="1"/>
+
+                    <BoxView Color="Gray" Grid.Column="1" Grid.Row="1"/>
+                    <ImageButton Source="filme5.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="1"/>
+
+                    <BoxView Color="Gray" Grid.Column="2" Grid.Row="1"/>
+                    <ImageButton Source="filme6.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="1"/>
+
+                    <BoxView Color="Gray" Grid.Row="2"/>
+                    <ImageButton Source="filme1.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="2"/>
+
+                    <BoxView Color="Gray" Grid.Column="1" Grid.Row="2"/>
+                    <ImageButton Source="filme2.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="2"/>
+
+                    <BoxView Color="Gray" Grid.Column="2" Grid.Row="2"/>
+                    <ImageButton Source="filme3.jpg" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="2"/>
+
+                </Grid>
+
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

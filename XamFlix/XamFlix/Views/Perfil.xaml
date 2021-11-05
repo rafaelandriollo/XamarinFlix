@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFlix.Views.Perfil">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="black">
+            <BoxView HeightRequest="10"/>
+            <Label Text="Selecione seu Perfil" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="White"/>
+            <Frame BackgroundColor="#3E474C" HasShadow="False">
+                <Grid RowSpacing="0"
+                      ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                    <BoxView Color="Gray"/>
+                    <ImageButton Source="user1.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+
+                    <BoxView Color="Gray" Grid.Column="1"/>
+                    <ImageButton Source="user2.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="1"/>
+
+                    <BoxView Color="Gray" Grid.Column="2"/>
+                    <ImageButton Source="user1.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="2"/>
+
+                    <BoxView Color="Gray" Grid.Row="1"/>
+                    <ImageButton Source="user2.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="1"/>
+
+                    <BoxView Color="Gray" Grid.Column="1" Grid.Row="1"/>
+                    <!--<ImageButton Source="user1.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="1"/>-->
+
+                    <BoxView Color="Gray" Grid.Column="2" Grid.Row="1"/>
+                    <!--<ImageButton Source="user2.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="1"/>-->
+
+                    <BoxView Color="Gray" Grid.Row="2"/>
+                    <!--<ImageButton Source="user3.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="2"/>-->
+
+                    <BoxView Color="Gray" Grid.Column="1" Grid.Row="2"/>
+                    <!--<ImageButton Source="user4.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="2"/>-->
+
+                    <BoxView Color="Gray" Grid.Column="2" Grid.Row="2"/>
+                    <!--<ImageButton Source="user1.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="2"/>-->
+
+                </Grid>
+                
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

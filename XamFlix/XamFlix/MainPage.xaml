@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFlix.MainPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ScrollView>
+                <Grid BackgroundColor="#3E474C">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Frame Grid.Row="0"
+                             CornerRadius="10"
+                             BackgroundColor="Black"
+                             Margin="10, 0, 10, 0">
+
+                        <StackLayout>
+                            <Image Source="splash" Aspect="AspectFit" />
+                            <Label Text="xamflix.com.br"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="White"
+                               Padding="5"/>
+                        </StackLayout>
+
+                    </Frame>
+
+                    <Frame Grid.Row="1"
+                             CornerRadius="10"
+                             BackgroundColor="Red"
+                       Margin="10">
+
+                        <StackLayout
+                             Spacing="10">
+
+                            <Button Text="Perfil"
+                            Style="{StaticResource BotaoVermelho}"
+                            Clicked="Button_Clicked_2" />
+
+                            <Button Text="Séries"
+                            Style="{StaticResource BotaoEscuro}"
+                            Clicked="Button_Clicked_3" />
+
+                            <Button Text="Filmes"
+                            Style="{StaticResource BotaoEscuro}"
+                            Clicked="Button_Clicked_4" />
+
+                            <Button Text="Downloads"
+                            Style="{StaticResource BotaoEscuro}"
+                            Clicked="Button_Clicked_5" />
+
+                            <Button Text="Meus Favoritos"
+                            Style="{StaticResource BotaoEscuro}"
+                            Clicked="Button_Clicked_6" />
+
+                            <Button Text="Buscar"
+                            Style="{StaticResource BotaoEscuro}"
+                            Clicked="Button_Clicked_7" />
+
+                            <Button Text="Sair"
+                            Style="{StaticResource BotaoVermelho}"
+                            Clicked="Button_Clicked_1" />
+
+
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+            </ScrollView>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            
+        </NavigationPage>
+
+    </MasterDetailPage.Detail>
+    
+
+</MasterDetailPage>
